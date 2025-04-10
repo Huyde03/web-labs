@@ -1,0 +1,37 @@
+﻿.vmenu {
+    padding: 0;
+    margin: 5px;
+    list-style: none;
+    width: 220px; /* Đảm bảo không quá rộng */
+    background: white;
+}
+
+    .vmenu li {
+        display: flex;
+        align-items: center; /* Giữ icon và chữ trên cùng một hàng */
+        padding: 5px;
+        border-bottom: 1px dotted orangered;
+    }
+
+    .vmenu a {
+        text-decoration: none;
+        color: orangered;
+        font-variant: small-caps;
+        font-size: larger;
+        white-space: nowrap; /* Giữ chữ trên cùng một dòng */
+    }
+
+    .vmenu img {
+        width: 16px; /* Thu nhỏ icon */
+        height: 16px;
+        margin-right: 10px; /* Giữ khoảng cách giữa icon và chữ */
+    }
+    .vmenu a:hover {
+        background-color: orange; /* Nền cam khi hover */
+        color: white; /* Chữ trắng */
+        font-weight: bold; /* Chữ đậm */
+        display: block; /* Đảm bảo hover áp dụng cho toàn bộ mục */
+        padding: 5px; /* Thêm khoảng cách để đẹp hơn */
+        border-radius: 5px; /* Bo góc nhẹ */
+    }
+
