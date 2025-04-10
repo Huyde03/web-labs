@@ -1,0 +1,85 @@
+﻿/* Định dạng bảng */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/* Định dạng các đường viền */
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+/* Định dạng tiêu đề bảng */
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+/* Định dạng hàng chẵn */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Định dạng hàng khi di chuột vào */
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Định dạng tiêu đề trung tâm */
+th[colspan="5"] {
+    background-color: #c4e17f;
+    font-size: 18px;
+    font-weight: bold;
+}
+/* Định dạng bảng */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/* Định dạng các đường viền */
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+/* Định dạng tiêu đề bảng */
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+/* Định dạng hàng chẵn */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Định dạng hàng khi di chuột vào */
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Định dạng tiêu đề trung tâm */
+th[colspan="5"] {
+    background-color: #c4e17f;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Định dạng chữ "U19 Việt Nam" thành màu đỏ */
+.red-text {
+    color: red;
+    font-weight: bold;
+}
+
+/* Định dạng chữ "Foxsports2" thành màu đỏ */
+.broadcast {
+    color: red;
+    font-style: italic;
+}
+

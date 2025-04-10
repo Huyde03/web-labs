@@ -1,0 +1,39 @@
+﻿table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    border:  4px solid #002b5e;
+}
+
+th, td {
+    border: 1px solid #002b5e;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Định dạng tiêu đề */
+th {
+    background-color: #005bac;
+    color: white;
+    font-weight: bold;
+}
+
+    /* Định dạng nhóm cột "TỶ GIÁ MUA" */
+    th[colspan] {
+        background-color: #007bc4;
+        border-bottom: 3px solid #003f7f; /* Tạo đường viền nổi bật */
+    }
+
+/* Định dạng ô "TIỀN MẶT" và "CHUYỂN KHOẢN" */
+tr:nth-child(2) th {
+    border-top: 3px solid #003f7f; /* Đường viền giữa 2 ô con */
+}
+
+/* Định dạng các hàng xen kẽ */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(odd):not(:first-child) {
+    background-color: #ffffff;
+}
