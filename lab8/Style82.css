@@ -1,0 +1,66 @@
+﻿/* Định dạng thanh menu */
+.menu > ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-radius: 3px;
+    background-color: orangered;
+    text-align: center;
+}
+
+    /* Hiển thị menu ngang */
+    .menu > ul > li {
+        display: inline-block;
+        position: relative; /* Định vị cho menu con */
+    }
+
+        /* Định dạng liên kết chính */
+        .menu > ul > li > a {
+            display: block;
+            text-decoration: none;
+            font-variant: small-caps;
+            font-size: larger;
+            color: white;
+            padding: 0 15px;
+            line-height: 40px;
+        }
+
+            /* Hiệu ứng hover trên liên kết */
+            .menu > ul > li > a:hover {
+                color: yellow;
+            }
+
+/* Định dạng menu con */
+.menu ul ul {
+    position: absolute;
+    display: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-radius: 3px;
+    width: 200px;
+    background-color: white;
+    box-shadow: 0 0 1px gray;
+}
+
+    /* Định dạng liên kết menu con */
+    .menu ul ul a {
+        display: block;
+        line-height: 30px;
+        color: orangered;
+        text-decoration: none;
+        font-variant: small-caps;
+        font-size: larger;
+        padding: 0 10px;
+    }
+
+        /* Hiệu ứng hover trên menu con */
+        .menu ul ul a:hover {
+            background-color: orangered;
+            color: white;
+        }
+
+/* Hiển thị menu con khi hover vào mục cha */
+.menu > ul > li:hover > ul {
+    display: block;
+}

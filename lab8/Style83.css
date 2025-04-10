@@ -1,0 +1,157 @@
+﻿/* Định dạng tổng thể */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: url('ảnh/fpt.jpg');
+    height: 150px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    position: relative;
+}
+
+    header h1 {
+        color: #fff;
+        font-size: 36px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 5px 15px;
+        background: rgba(255, 69, 0, 0.8);
+        display: inline-block;
+        border-radius: 5px;
+        text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.5);
+    }
+
+    header img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+/* Menu */
+.menu {
+    background-color: orangered;
+    text-align: center;
+}
+
+    .menu ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .menu > ul > li {
+        display: inline-block;
+        position: relative;
+    }
+
+        .menu > ul > li > a {
+            display: block;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+            .menu > ul > li > a:hover {
+                color: yellow;
+            }
+
+    /* Menu con */
+    .menu ul ul {
+        position: absolute;
+        display: none;
+        background-color: white;
+        box-shadow: 0 0 1px gray;
+        width: 150px;
+    }
+
+        .menu ul ul li a {
+            display: block;
+            padding: 10px;
+            color: orangered;
+            text-decoration: none;
+        }
+
+            .menu ul ul li a:hover {
+                background-color: orangered;
+                color: white;
+            }
+
+    .menu > ul > li:hover > ul {
+        display: block;
+    }
+
+/* Bố cục tổng thể */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: flex-start;
+}
+
+/* Nội dung chính */
+.content {
+    flex: 3;
+    padding: 20px;
+    background-color: white;
+}
+
+/* Sidebar (đã chỉnh sửa để nằm bên phải) */
+.sidebar {
+    flex: 1;
+    max-width: 250px;
+    background: white;
+    border: 2px solid orange; /* Đậm hơn để dễ nhìn */
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: auto; /* Đẩy sidebar sát về bên phải */
+}
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+        .sidebar ul li {
+            border-bottom: 1px solid orange;
+        }
+
+            .sidebar ul li:last-child {
+                border-bottom: none;
+            }
+
+            .sidebar ul li a {
+                display: block;
+                padding: 10px;
+                text-decoration: none;
+                color: orange;
+                font-size: 16px;
+                transition: 0.3s;
+            }
+
+                .sidebar ul li a:hover {
+                    background-color: orange;
+                    color: white;
+                    border-radius: 3px;
+                }
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: blue;
+    color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+}
