@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Nhập Liệu</title>
+    <link href="Style101.css" rel="stylesheet" />
+</head>
+<body>
+    <form>
+        <div class="form-group">
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" class="form-control" tabindex="1">
+        </div>
+        <div class="form-group">
+            <label for="nationality">Quốc tịch:</label>
+            <input type="text" id="nationality" class="form-control" value="Việt Nam" readonly size="10">
+        </div>
+        <div class="form-group">
+            <label for="notes">Ghi chú:</label>
+            <textarea id="notes" class="form-control" tabindex="2"></textarea>
+        </div>
+        <hr>
+        <div class="form-group">
+            <button type="button" class="form-button" tabindex="3">Thêm</button>
+            <button type="button" class="form-button" tabindex="4">Sửa</button>
+            <button type="button" class="form-button" disabled>Xóa</button>
+        </div>
+    </form>
+</body>
+</html>

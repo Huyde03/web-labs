@@ -1,0 +1,67 @@
+﻿.form-group {
+    margin: 5px 0;
+}
+
+.form-control {
+    width: 98%;
+    padding: 5px;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+.form-group label {
+    display: block; /* Chuyển label thành block để xuống dòng */
+    font-weight: bold; /* Làm đậm chữ */
+    margin-bottom: 5px; /* Tạo khoảng cách giữa label và input */
+}
+
+
+.form-control:focus {
+    background-color: yellow;
+    box-shadow: 0 0 3px red;
+    border: 1px solid yellow;
+}
+
+.form-button {
+    padding: 8px 30px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: white;
+    color: orangered;
+    box-shadow: inset 0 0 20px blue;
+    cursor: pointer;
+}
+
+    .form-button:hover {
+        color: blue;
+        box-shadow: inset 0 0 20px orangered;
+    }
+
+    .form-button:disabled {
+        color: darkgray;
+        box-shadow: inset 0 0 20px gray;
+        cursor: not-allowed;
+    }
+
+textarea {
+    width: 90%;
+    padding: 5px;
+    min-height: 50px;
+}
+#nationality {
+    width: 200px; /* Giới hạn chiều rộng cố định */
+    max-width: 50%; /* Đảm bảo không vượt quá một nửa chiều rộng trang */
+    padding: 5px;
+    font-size: 14px;
+}
+ #name {
+    width: 200px; /* Giới hạn chiều rộng cố định */
+    max-width: 50%; /* Đảm bảo không vượt quá một nửa chiều rộng trang */
+    padding: 5px;
+    font-size: 14px;
+}
+
+
