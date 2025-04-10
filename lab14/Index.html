@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu</title>
+    <link href="StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="video-header">
+        <img src="2020-FPTPolytechic.png" alt="Logo" class="logo">
+        <span class="brand-name">HuyTube</span>
+    </div>
+    <h1>Youtube của bạn Huy</h1>
+    <div class="main-content">
+        <!-- Video chính -->
+        <div class="video-container">
+            <iframe id="mainVideo"
+                    src="https://www.youtube.com/embed/HoA-sSCd12w"
+                    frameborder="0"
+                    allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Danh sách video gợi ý -->
+        <div class="video-list">
+            <div class="video-item" onclick="changeVideo('HoA-sSCd12w')">
+                <img src="https://img.youtube.com/vi/HoA-sSCd12w/mqdefault.jpg" alt="Video 1">
+                <p>Video 1: Phonk chiến</p>
+            </div>
+            <div class="video-item" onclick="changeVideo('sZV-g9PrgJQ')">
+                <img src="https://img.youtube.com/vi/sZV-g9PrgJQ/mqdefault.jpg" alt="Video 2">
+                <p>Video 2: Nhạc Phonk</p>
+            </div>
+            <div class="video-item" onclick="changeVideo('B_Pd4EvwpQY')">
+                <img src="https://img.youtube.com/vi/B_Pd4EvwpQY/mqdefault.jpg" alt="Video 3">
+                <p>Video 3: Anime</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function changeVideo(videoId) {
+            const iframe = document.getElementById('mainVideo');
+            iframe.src = `https://www.youtube.com/embed/${videoId}`;
+            document.querySelectorAll('.video-item').forEach(item => item.classList.remove('active'));
+            el.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
