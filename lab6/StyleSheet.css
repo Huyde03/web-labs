@@ -1,0 +1,140 @@
+﻿/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Căn giữa nội dung */
+body {
+    background-color: #f5f7fa;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Tiêu đề chính */
+header {
+    background-color: #0073e6;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Định dạng menu chính */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    /* Menu ngăn cách bằng "|" */
+    .menu a {
+        position: relative;
+        padding: 10px 15px;
+        color: blue; /* Mặc định màu xanh */
+        font-weight: bold;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+    }
+
+        /* Hiệu ứng màu sắc khi nhấp vào */
+        .menu a:active {
+            color: purple; /* Khi nhấp vào đổi thành màu tím */
+        }
+
+        /* Hiệu ứng màu sắc khi di chuột */
+        .menu a:hover {
+            color: yellow;
+            text-decoration: underline;
+        }
+
+        /* Sau khi click (visited), trở lại màu xanh */
+        .menu a:visited {
+            color: blue;
+        }
+
+        /* Dấu "|" phân cách menu */
+        .menu a:not(:last-child)::after {
+            content: "|";
+            margin-left: 10px;
+            color: #ccc;
+        }
+
+/* Dòng phân cách */
+hr {
+    width: 50%;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+}
+
+/* Layout chính */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+/* Danh mục sản phẩm */
+aside {
+    width: 25%;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+    aside ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        aside ul li {
+            margin: 10px 0;
+        }
+
+            aside ul li a {
+                text-decoration: none;
+                color: #333;
+                font-weight: bold;
+                display: block;
+                padding: 5px;
+                border-radius: 5px;
+                transition: background 0.3s ease, color 0.3s ease;
+            }
+
+                aside ul li a:hover {
+                    background: #0073e6;
+                    color: white;
+                }
+
+/* Khung hiển thị nội dung */
+article {
+    flex-grow: 1;
+    padding: 15px;
+}
+
+iframe {
+    width: 90%;
+    height: 400px;
+    border: 2px solid #0073e6;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+}
