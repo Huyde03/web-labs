@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chính</title>
+    <link href="StyleSheet2.css" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 10px;
+            height: 100vh;
+            padding: 10px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .thumbnail {
+            width: 100%;
+            height: 88%;
+            object-fit: cover;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <iframe name="videoFrame" src="video1.html"></iframe>
+        <div class="sidebar">
+            <a href="video1.html" target="videoFrame">
+                <img src="../snh/fpt.jpg"alt="Ảnh 1" class="thumbnail" style="background: orange;">
+            </a>
+            <a href="video2.html" target="videoFrame">
+                <img src="../snh/concao.jpg" alt="Ảnh 2" class="thumbnail" style="background: teal;">
+            </a>
+            <a href="video3.html" target="videoFrame">
+                <img src="../snh/concao.jpg" alt="Ảnh 3" class="thumbnail" style="background: lavender;">
+            </a>
+        </div>
+    </div>
+</body>
+</html>

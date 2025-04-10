@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiển thị Flash</title>
+    <!-- Nhúng Ruffle để chạy Flash -->
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</head>
+<body>
+    <h1>Hiển thị 2 Flash</h1>
+
+    <h2>Flash 1 - Dùng &lt;embed&gt;</h2>
+    <embed src="flash/skeleton.swf" width="600" height="400">
+
+    <h2>Flash 2 - Dùng &lt;object&gt;</h2>
+    <object width="600" height="400" data="flash/skeleton.swf"></object>
+</body>
+</html>
